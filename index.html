@@ -1,1 +1,71 @@
+<h1 id="title"> Note-taking App Survey </h1>
+
+<p id="description"> Thank you for taking your time to complete this short survey. </p>
+
+<form id="survey-form" >
+    <label for="name" id="name-label"> Name 
+        <input id="name" type="text" name="name" placeholder="Insert Name Here: " required />
+    </label>
+    <br>
+    <label for="email" id="email-label"> Email
+        <input id="email" type="email" name="email" placeholder="Insert Email Here: " required /> 
+        <!--"required" makes it so "if an email is not formatted correctly, you will see an HTML5 Error"-->
+    </label>
+    <br>
+    <label for="number" id="number-label"> Age
+        <input id="age" type="number" name="age" placeholder="How old are you? " min="13" max="120" required />
+        <!--"required" makes it so "if a number is not formatted correctly, you will see an HTML5 Error"-->
+    </label>
+    <br>
+    <label for="dropdown" id="note-app"> Select what notetaking app you primarily use.
+        <select id="dropdown">
+            <option value="">(select option)</option>
+            <option value="OneNote">OneNote</option>
+            <option value="EverNote">EverNote</option>
+            <option value="Notion">OneNote</option> 
+            <option value="Apple_Notes">EverNote</option>
+            <option value="Google_Keep">OneNote</option>
+            <option value="GoodNotes">GoodNotes</option>
+            <option value="Notability">Notability</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <label for="radio" id="feel"> On a 1 - 5 scale, how do you <b>feel</b> about your current note-taking app?
+        <br>
+        <label for="one">1<input id="feel" type="radio" id="one" name="number" value="one" /></label>
+        <br>
+        <label for="two">2<input id="feel" type="radio" id="two" name="number" value="two" /></label>
+        <br>
+        <label for="three">3<input id="feel" type="radio" id="three" name="number" value="three" /></label>
+        <br>
+        <label for="four">4<input id="feel" type="radio" id="four" name="number" value="four" /></label>
+        <br>
+        <label for="five">5<input id="feel" type="radio" id="five" name="number" value="five" /></label>
+    </label>
+    <br>
+    <br>
+    <label for="emotions"> What are your <b>emotions</b> on your current note-taking app?
+        <br>
+        <label for="checkbox">Content, I <b>love</b> this app.<input id="checkbox" type="checkbox" name="emotions" value="content" /></label>
+        <br>
+        <label for="checkbox">Alright<input id="checkbox" type="checkbox" name="emotions" value="alright" /></label>
+        <br>
+        <label for="checkbox">Indifferent, It's fine.<input id="checkbox" type="checkbox" name="emotions" value="indifferent" /></label>
+        <br>
+        <label for="checkbox">Mildly Annoyed, but not to the point I will switch. I will look at other apps, though..<input id="checkbox" type="checkbox" name="emotions" value="mild_annoyance" /></label>
+        <br>
+        <label for="checkbox">Frustrated, I want to switch <b>right now</b> I <b>hate</b> this app.<input id="checkbox" type="checkbox" name="emotions" value="Frustrated" /></label>
+    </label>
+    <br>
+    <br>
+    <label id="text-area"> Any additional things you want to say?
+        <br>
+        <textarea id="textarea" name="additional" rows="5" cols="40"></textarea>
+    </label>
+    <br> 
+
+   <input id="submit" type="submit" value="submit form" />
+    
+</form>
 
